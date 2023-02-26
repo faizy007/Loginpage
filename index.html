@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <img src="logo.png" alt="Paris" width="200" height="80" />
+      <header>Login Form</header>
+      <form action="/dashboard-new.html">
+        <div class="field email">
+          <div class="input-area">
+            <input type="text" placeholder="Email Address" id="email" />
+            <i class="icon fas fa-envelope"></i>
+            <div class="error-msg" id="email-error"></div>
+          </div>
+        </div>
+        <div class="field password">
+          <div class="input-area">
+            <input type="password" placeholder="Password" id="password" />
+            <i class="icon fas fa-lock"></i>
+            <div class="error-msg" id="password-error"></div>
+          </div>
+        </div>
+        <div class="pass-txt">
+          <a href="https://github.com/password_reset">Forgot password?</a>
+        </div>
+        <button type="submit" id="login-btn" disabled>Log in</button>
+      </form>
+      <div class="sign-txt">
+        Not yet member?
+        <a href="https://github.com/signup?source=login">Signup now</a>
+      </div>
+    </div>
+    <script src="validation.js"></script>
+  </body>
+</html>
